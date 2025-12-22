@@ -2,22 +2,22 @@
   "items": [
     {
       "id": "232",
-      "titulo": "actividad de mision",
-      "texto": "sisjdiasdasdas",
+      "titulo": "Prueba 1",
+      "texto": "water",
       "imagen": "/assets/uploads/vaca.jpeg",
       "fecha": "2025-12-31"
     },
     {
       "id": "545",
-      "titulo": "gggg",
-      "texto": "rgdfgdfg",
+      "titulo": "Prueba 2",
+      "texto": "water",
       "imagen": "/assets/uploads/rio1.jpeg",
       "fecha": "2025-12-27"
     },
     {
       "id": "4545",
-      "titulo": "esrwer",
-      "texto": "erwrwerew",
+      "titulo": "Prueba 3",
+      "texto": "water",
       "imagen": "/assets/uploads/rio2.jpeg",
       "fecha": "2025-12-22"
     }
