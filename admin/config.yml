@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: andrezx501/saqua
+  repo: Andrex501/saqua
   branch: main
 
 media_folder: "assets/uploads"
