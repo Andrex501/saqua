@@ -937,6 +937,39 @@ section[id]{
   section[id]{ scroll-margin-top: 140px; }
 }
 
+/* HEADER SIEMPRE VISIBLE */
+.aqua-header{
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  padding: 14px 0;
+  background: rgba(233, 241, 247, 0.75); /* fondo suave para que no “desaparezca” */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* El menú como tal */
+.aqua-menu{
+  max-width:1100px;
+  margin:0 auto;
+  display:flex;
+  justify-content:center;
+  gap:26px;
+  padding:12px 18px;
+  border-radius:16px;
+  background: linear-gradient(135deg, var(--primary), var(--primary2));
+  box-shadow: 0 10px 25px rgba(0,0,0,.18);
+  flex-wrap: wrap;
+}
+
+/* Evita que sticky falle por overflow en contenedores */
+html, body{
+  overflow-x: hidden;
+}
+
+.page-content{
+  overflow: visible !important;
+}
 
 
 
