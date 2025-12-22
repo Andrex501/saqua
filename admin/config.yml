@@ -1,11 +1,10 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: andrezx501/saqua
   branch: main
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
-
-publish_mode: simple
 
 collections:
   - name: "contenido"
