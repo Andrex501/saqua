@@ -177,10 +177,12 @@
      
 
 
+
       <form 
   name="pqr"
   method="POST"
   data-netlify="true"
+  data-netlify-recaptcha="true"
   netlify-honeypot="bot-field"
   action="/gracias.html"
   class="p-4 bg-white rounded-4 shadow-sm"
@@ -230,11 +232,17 @@
       <textarea name="mensaje" class="form-control" rows="5" required></textarea>
     </div>
 
+    <!-- ✅ CAPTCHA -->
+    <div class="col-12">
+      <div data-netlify-recaptcha="true"></div>
+    </div>
+
     <div class="col-12 d-flex justify-content-end">
       <button type="submit" class="btn btn-primary">Enviar PQR</button>
     </div>
   </div>
 </form>
+
 
 
 
