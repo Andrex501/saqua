@@ -174,58 +174,71 @@
 
   <div class="row justify-content-center">
     <div class="col-lg-7">
-      <form name="contact" netlify method="POST" action="/gracias.html" data-netlify="true" netlify-honeypot="bot-field" class="p-4 bg-white rounded-4 shadow-sm">
-        <!-- requerido por Netlify -->
-        <input type="hidden" name="form-name" value="pqr" />
+     
 
-        <!-- anti spam invisible -->
-        <p class="d-none">
-          <label>No llenes esto: <input name="bot-field" /></label>
-        </p>
 
-        <div class="row g-3">
-          <div class="col-md-6">
-            <label class="form-label fw-semibold">Nombre</label>
-            <input type="text" name="nombre" class="form-control" placeholder="Tu nombre" required>
-          </div>
+      <form 
+  name="pqr"
+  method="POST"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  action="/gracias.html"
+  class="p-4 bg-white rounded-4 shadow-sm"
+>
+  <!-- obligatorio -->
+  <input type="hidden" name="form-name" value="pqr">
 
-          <div class="col-md-6">
-            <label class="form-label fw-semibold">Correo</label>
-            <input type="email" name="correo" class="form-control" placeholder="tucorreo@email.com" required>
-          </div>
+  <!-- honeypot -->
+  <p class="d-none">
+    <label>No llenar: <input name="bot-field"></label>
+  </p>
 
-          <div class="col-md-6">
-            <label class="form-label fw-semibold">Teléfono</label>
-            <input type="tel" name="telefono" class="form-control" placeholder="+57 300 000 0000">
-          </div>
+  <div class="row g-3">
+    <div class="col-md-6">
+      <label class="form-label fw-semibold">Nombre</label>
+      <input type="text" name="nombre" class="form-control" required>
+    </div>
 
-          <div class="col-md-6">
-            <label class="form-label fw-semibold">Tipo</label>
-            <select name="tipo" class="form-select" required>
-              <option value="" selected disabled>Selecciona…</option>
-              <option>Petición</option>
-              <option>Queja</option>
-              <option>Reclamo</option>
-              <option>Sugerencia</option>
-            </select>
-          </div>
+    <div class="col-md-6">
+      <label class="form-label fw-semibold">Correo</label>
+      <input type="email" name="correo" class="form-control" required>
+    </div>
 
-          <div class="col-12">
-            <label class="form-label fw-semibold">Asunto</label>
-            <input type="text" name="asunto" class="form-control" placeholder="Ej: Solicitud de información" required>
-          </div>
+    <div class="col-md-6">
+      <label class="form-label fw-semibold">Teléfono</label>
+      <input type="tel" name="telefono" class="form-control">
+    </div>
 
-          <div class="col-12">
-            <label class="form-label fw-semibold">Mensaje</label>
-            <textarea name="mensaje" class="form-control" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
-          </div>
+    <div class="col-md-6">
+      <label class="form-label fw-semibold">Tipo</label>
+      <select name="tipo" class="form-select" required>
+        <option disabled selected>Selecciona…</option>
+        <option>Petición</option>
+        <option>Queja</option>
+        <option>Reclamo</option>
+        <option>Sugerencia</option>
+      </select>
+    </div>
 
-          <div class="col-12 d-flex justify-content-between align-items-center flex-wrap gap-2">
-            <small class="opacity-75">Al enviar, aceptas ser contactado para dar respuesta a tu solicitud.</small>
-            <button type="submit" class="btn btn-primary px-4">Enviar PQR</button>
-          </div>
-        </div>
-      </form>
+    <div class="col-12">
+      <label class="form-label fw-semibold">Asunto</label>
+      <input type="text" name="asunto" class="form-control" required>
+    </div>
+
+    <div class="col-12">
+      <label class="form-label fw-semibold">Mensaje</label>
+      <textarea name="mensaje" class="form-control" rows="5" required></textarea>
+    </div>
+
+    <div class="col-12 d-flex justify-content-end">
+      <button type="submit" class="btn btn-primary">Enviar PQR</button>
+    </div>
+  </div>
+</form>
+
+
+
+
     </div>
   </div>
 </section>
