@@ -10,78 +10,97 @@
 </head>
 
 <body>
+
   <!-- HEADER / MENU -->
   <header class="aqua-header">
     <nav class="aqua-menu">
       <a href="#inicio">Inicio</a>
-      <a href="#quienes-somos">Quiénes somos</a>
+      <a href="#como-funciona">Cómo funciona</a>
       <a href="#actividades">Actividades</a>
-      <a href="#quejas">Quejas y reclamos</a>
+      <a href="#quienes-somos">Quiénes somos</a>
+      <a href="#cobertura">Cobertura</a>
+      <a href="#quejas">PQR</a>
     </nav>
   </header>
 
   <!-- CONTENIDO -->
   <main class="page-content">
-    <div class="aqua-title">
-      <h1 class="aqua-text border">SAQUA</h1>
-      <h1 class="aqua-text wave">SAQUA</h1>
-    </div>
 
-    <div class="text-center">
-      <b class="eslogan">Por ti, por mí y por los que vendrán</b>
-    </div>
-
-    <br><br>
-
-    <!-- INICIO -->
+    <!-- HERO -->
     <section class="container py-4" id="inicio">
-      <div class="row align-items-center g-4">
-        <div class="col-lg-6">
-          <h2 class="fw-bold">Agua Potable</h2>
-          <p class="lead mb-3">
-            Hidratación segura para tu hogar y empresa. Entregas rápidas y atención confiable.
+      <div class="aqua-title reveal" data-anim="zoom">
+        <h1 class="aqua-text border">SAQUA</h1>
+        <h1 class="aqua-text wave">SAQUA</h1>
+      </div>
+
+      <div class="text-center reveal delay-1" data-anim="up">
+        <b class="eslogan">Por ti, por mí y por los que vendrán</b>
+      </div>
+
+      <div class="row align-items-center g-4 mt-4">
+        <div class="col-lg-6 reveal" data-anim="left">
+          <span class="hero-pill">💧 Agua potable en Santander</span>
+
+          <h2 class="fw-bold mt-3">Agua potable confiable para hogares, empresas y eventos</h2>
+
+          <p class="lead mb-3" style="color: var(--muted);">
+            Entregas rápidas · Atención clara · Envases retornables · Compromiso ambiental.
           </p>
 
           <div class="d-flex gap-2 flex-wrap">
             <a class="btn btn-primary btn-lg" href="https://wa.me/573001234567" target="_blank" rel="noopener">
-              Contactar vía WhatsApp
+              Solicitar domicilio
+            </a>
+            <a class="btn btn-outline-primary btn-lg" href="#quejas">
+              PQR / Atención
             </a>
           </div>
 
+          <div class="hero-badges">
+            <div class="hero-badge">🚚 Domicilio rápido</div>
+            <div class="hero-badge">🧪 Calidad controlada</div>
+            <div class="hero-badge">♻️ Retornable</div>
+            <div class="hero-badge">📍 Santander</div>
+          </div>
+
           <p class="mt-3 mb-0 small opacity-75">
-            Horario: Lun–Vie 8:00 AM – 5:00 PM · Cobertura: tu zona aquí
+            Horario: Lun–Vie 8:00 AM – 5:00 PM · Cobertura: Santander (área metropolitana y alrededores)
           </p>
         </div>
 
-        <div class="col-lg-6">
-          <div class="p-4 bg-white rounded-4 shadow-sm">
+        <div class="col-lg-6 reveal" data-anim="right">
+          <div class="p-4 bg-white rounded-4 shadow-sm card-pro">
             <h5 class="fw-bold mb-3">¿Por qué SAQUA?</h5>
 
             <div class="row g-3">
-              <div class="col-6">
-                <div class="p-3 border rounded-3 h-100">
-                  💧 <b>Potable</b>
+              <div class="col-6 reveal delay-1" data-anim="up">
+                <div class="feature-card">
+                  <div class="feature-icon">💧</div>
+                  <b>Potable</b>
                   <div class="small opacity-75">Agua tratada y segura</div>
                 </div>
               </div>
 
-              <div class="col-6">
-                <div class="p-3 border rounded-3 h-100">
-                  🚚 <b>Domicilio</b>
+              <div class="col-6 reveal delay-2" data-anim="up">
+                <div class="feature-card">
+                  <div class="feature-icon">🚚</div>
+                  <b>Domicilio</b>
                   <div class="small opacity-75">Entrega rápida</div>
                 </div>
               </div>
 
-              <div class="col-6">
-                <div class="p-3 border rounded-3 h-100">
-                  🧪 <b>Calidad</b>
+              <div class="col-6 reveal delay-3" data-anim="up">
+                <div class="feature-card">
+                  <div class="feature-icon">🧪</div>
+                  <b>Calidad</b>
                   <div class="small opacity-75">Proceso controlado</div>
                 </div>
               </div>
 
-              <div class="col-6">
-                <div class="p-3 border rounded-3 h-100">
-                  ♻️ <b>Retornable</b>
+              <div class="col-6 reveal delay-4" data-anim="up">
+                <div class="feature-card">
+                  <div class="feature-icon">♻️</div>
+                  <b>Retornable</b>
                   <div class="small opacity-75">Cuidamos el ambiente</div>
                 </div>
               </div>
@@ -92,16 +111,95 @@
       </div>
     </section>
 
-    <br><br>
-
-    <!-- ACTIVIDADES (CARRUSEL) -->
-    <section class="container py-5" id="actividades">
-      <div class="text-center mb-4">
-        <h2 class="fw-bold">Actividades</h2>
-        <p class="opacity-75 mb-0">Actividades realizadas con nuestra comunidad.</p>
+    <!-- CÓMO FUNCIONA -->
+    <section class="container section-pad" id="como-funciona">
+      <div class="text-center mb-4 reveal" data-anim="up">
+        <h2 class="section-title">¿Cómo funciona SAQUA?</h2>
+        <p class="section-sub">Un proceso simple, claro y confiable para que tengas agua potable cuando la necesites.</p>
       </div>
 
-      <div id="actividadesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500" data-bs-pause="false">
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-3 reveal delay-1" data-anim="up">
+          <div class="feature-card">
+            <div class="feature-icon">💧</div>
+            <b>Tratamiento</b>
+            <div class="small opacity-75 mt-1">Control de calidad para consumo seguro.</div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 reveal delay-2" data-anim="up">
+          <div class="feature-card">
+            <div class="feature-icon">🚚</div>
+            <b>Domicilio</b>
+            <div class="small opacity-75 mt-1">Entrega rápida a hogar o empresa.</div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 reveal delay-3" data-anim="up">
+          <div class="feature-card">
+            <div class="feature-icon">♻️</div>
+            <b>Retornable</b>
+            <div class="small opacity-75 mt-1">Reutilizamos envases y reducimos residuos.</div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 reveal delay-4" data-anim="up">
+          <div class="feature-card">
+            <div class="feature-icon">📞</div>
+            <b>Soporte</b>
+            <div class="small opacity-75 mt-1">PQR y atención rápida cuando lo necesites.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENTES / SOLUCIONES -->
+    <section class="container section-pad" id="clientes">
+      <div class="text-center mb-4 reveal" data-anim="up">
+        <h2 class="section-title">Soluciones para cada necesidad</h2>
+        <p class="section-sub">Atendemos hogares, empresas e instituciones con suministro confiable.</p>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-3 reveal delay-1" data-anim="up">
+          <div class="feature-card">
+            <div class="feature-icon">🏠</div>
+            <b>Hogares</b>
+            <div class="small opacity-75 mt-1">Hidratación segura para tu familia.</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal delay-2" data-anim="up">
+          <div class="feature-card">
+            <div class="feature-icon">🏢</div>
+            <b>Empresas</b>
+            <div class="small opacity-75 mt-1">Suministro constante para tu equipo.</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal delay-3" data-anim="up">
+          <div class="feature-card">
+            <div class="feature-icon">🏫</div>
+            <b>Instituciones</b>
+            <div class="small opacity-75 mt-1">Atención organizada y confiable.</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 reveal delay-4" data-anim="up">
+          <div class="feature-card">
+            <div class="feature-icon">🎉</div>
+            <b>Eventos</b>
+            <div class="small opacity-75 mt-1">Soluciones para reuniones y jornadas.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACTIVIDADES (CARRUSEL) -->
+    <section class="container section-pad" id="actividades">
+      <div class="text-center mb-4 reveal" data-anim="up">
+        <h2 class="fw-bold section-title">Actividades</h2>
+        <p class="opacity-75 mb-0 section-sub">Actividades realizadas con nuestra comunidad.</p>
+      </div>
+
+      <div id="actividadesCarousel" class="carousel slide reveal" data-anim="up" data-bs-ride="carousel" data-bs-interval="3500" data-bs-pause="false">
         <div class="carousel-inner" id="actividadesSlides"></div>
 
         <button class="carousel-control-prev" type="button" data-bs-target="#actividadesCarousel" data-bs-slide="prev">
@@ -119,10 +217,10 @@
   </main>
 
   <!-- QUIÉNES SOMOS -->
-  <section class="container py-5" id="quienes-somos">
-    <div class="text-center mb-4">
-      <h2 class="fw-bold quienessomos">¿Quiénes somos?</h2>
-      <p class="mt-3 opacity-75 mx-auto quienes-texto">
+  <section class="container section-pad" id="quienes-somos">
+    <div class="text-center mb-4 reveal" data-anim="up">
+      <h2 class="fw-bold quienessomos section-title">¿Quiénes somos?</h2>
+      <p class="mt-3 opacity-75 mx-auto quienes-texto section-sub">
         Somos una empresa comprometida con el bienestar de nuestra comunidad,
         dedicada a ofrecer soluciones responsables y sostenibles mediante el
         suministro de agua potable y el cuidado del medio ambiente.
@@ -130,8 +228,8 @@
     </div>
 
     <div class="row align-items-center g-4 mt-4">
-      <div class="col-lg-4 text-center text-lg-end">
-        <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+      <div class="col-lg-4 text-center text-lg-end reveal" data-anim="left">
+        <div class="p-4 bg-white rounded-4 shadow-sm h-100 card-pro">
           <h4 class="fw-bold mb-3">Misión</h4>
           <p class="opacity-75 mb-0">
             Proporcionar servicios de alta calidad que contribuyan al desarrollo
@@ -141,12 +239,12 @@
         </div>
       </div>
 
-      <div class="col-lg-4 text-center">
+      <div class="col-lg-4 text-center reveal" data-anim="zoom">
         <img src="./imagen/logo.png" alt="Logo SAQUA" class="imagenlogo my-3">
       </div>
 
-      <div class="col-lg-4 text-center text-lg-start">
-        <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+      <div class="col-lg-4 text-center text-lg-start reveal" data-anim="right">
+        <div class="p-4 bg-white rounded-4 shadow-sm h-100 card-pro">
           <h4 class="fw-bold mb-3">Visión</h4>
           <p class="opacity-75 mb-0">
             Ser reconocidos como una empresa líder en soluciones sostenibles,
@@ -158,112 +256,151 @@
     </div>
   </section>
 
-  <br><br>
+  <!-- COBERTURA -->
+  <section class="container section-pad" id="cobertura">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-6 reveal" data-anim="left">
+        <h2 class="section-title">Cobertura en Santander</h2>
+        <p class="opacity-75">
+          Operamos en el área metropolitana y municipios cercanos. Escríbenos y confirmamos cobertura y tiempos de entrega.
+        </p>
 
+        <div class="row g-3 mt-2">
+          <div class="col-6 reveal delay-1" data-anim="up"><div class="feature-card">📍 Bucaramanga</div></div>
+          <div class="col-6 reveal delay-2" data-anim="up"><div class="feature-card">📍 Floridablanca</div></div>
+          <div class="col-6 reveal delay-3" data-anim="up"><div class="feature-card">📍 Girón</div></div>
+          <div class="col-6 reveal delay-4" data-anim="up"><div class="feature-card">📍 Piedecuesta</div></div>
+        </div>
+      </div>
 
+      <div class="col-lg-6 reveal" data-anim="right">
+        <div class="card-pro">
+          <div class="card-pro-body">
+            <h5 class="fw-bold mb-2">¿Necesitas confirmar cobertura?</h5>
+            <p class="small opacity-75 mb-3">Te respondemos por WhatsApp en minutos.</p>
+            <a class="btn btn-primary" href="https://wa.me/573001234567" target="_blank" rel="noopener">
+              Confirmar cobertura por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-
-
-
-
-<section class="container py-5" id="quejas">
-  <div class="text-center mb-4">
-    <h2 class="fw-bold">PQR</h2>
-    <p class="opacity-75 mb-0">Peticiones, Quejas y Reclamos. Te responderemos lo antes posible.</p>
-  </div>
-
-  <div class="row justify-content-center">
-    <div class="col-lg-7">
-     
-
-
-
-      <form 
-  name="pqr"
-  method="POST"
-  data-netlify="true"
-  data-netlify-recaptcha="true"
-  netlify-honeypot="bot-field"
-  action="/gracias.html"
-  class="p-4 bg-white rounded-4 shadow-sm"
->
-  <!-- obligatorio -->
-  <input type="hidden" name="form-name" value="pqr">
-
-  <!-- honeypot -->
-  <p class="d-none">
-    <label>No llenar: <input name="bot-field"></label>
-  </p>
-
-  <div class="row g-3">
-    <div class="col-md-6">
-      <label class="form-label fw-semibold">Nombre</label>
-      <input type="text" name="nombre" class="form-control" required>
+  <!-- PQR -->
+  <section class="container section-pad" id="quejas">
+    <div class="text-center mb-4 reveal" data-anim="up">
+      <h2 class="fw-bold section-title">PQR</h2>
+      <p class="opacity-75 mb-0 section-sub">Peticiones, Quejas y Reclamos. Te responderemos lo antes posible.</p>
     </div>
 
-    <div class="col-md-6">
-      <label class="form-label fw-semibold">Correo</label>
-      <input type="email" name="correo" class="form-control" required>
+    <div class="row justify-content-center reveal" data-anim="up">
+      <div class="col-lg-7">
+        <form
+          name="pqr"
+          method="POST"
+          data-netlify="true"
+          data-netlify-recaptcha="true"
+          netlify-honeypot="bot-field"
+          action="/gracias.html"
+          class="p-4 bg-white rounded-4 shadow-sm card-pro"
+        >
+          <input type="hidden" name="form-name" value="pqr">
+          <p class="d-none">
+            <label>No llenar: <input name="bot-field"></label>
+          </p>
+
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label fw-semibold">Nombre</label>
+              <input type="text" name="nombre" class="form-control" required>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label fw-semibold">Correo</label>
+              <input type="email" name="correo" class="form-control" required>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label fw-semibold">Teléfono</label>
+              <input type="tel" name="telefono" class="form-control">
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label fw-semibold">Tipo</label>
+              <select name="tipo" class="form-select" required>
+                <option disabled selected>Selecciona…</option>
+                <option>Petición</option>
+                <option>Queja</option>
+                <option>Reclamo</option>
+                <option>Sugerencia</option>
+              </select>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label fw-semibold">Asunto</label>
+              <input type="text" name="asunto" class="form-control" required>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label fw-semibold">Mensaje</label>
+              <textarea name="mensaje" class="form-control" rows="5" required></textarea>
+            </div>
+
+            <div class="col-12">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+
+            <div class="col-12 d-flex justify-content-end">
+              <button type="submit" class="btn btn-primary px-4">Enviar PQR</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="container section-pad" id="testimonios">
+    <div class="text-center mb-4 reveal" data-anim="up">
+      <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+      <p class="section-sub">La confianza se construye con servicio, calidad y cumplimiento.</p>
     </div>
 
-    <div class="col-md-6">
-      <label class="form-label fw-semibold">Teléfono</label>
-      <input type="tel" name="telefono" class="form-control">
+    <div class="row g-3">
+      <div class="col-md-6 col-lg-4 reveal delay-1" data-anim="up">
+        <div class="feature-card">
+          ⭐⭐⭐⭐⭐
+          <div class="mt-2 fw-bold">Excelente servicio</div>
+          <div class="small opacity-75">“Muy puntuales y atentos. Recomendado.”</div>
+          <div class="small mt-2">— Cliente en Santander</div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal delay-2" data-anim="up">
+        <div class="feature-card">
+          ⭐⭐⭐⭐⭐
+          <div class="mt-2 fw-bold">Calidad y confianza</div>
+          <div class="small opacity-75">“El proceso se nota, el agua es muy buena.”</div>
+          <div class="small mt-2">— Cliente empresarial</div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4 reveal delay-3" data-anim="up">
+        <div class="feature-card">
+          ⭐⭐⭐⭐⭐
+          <div class="mt-2 fw-bold">Atención rápida</div>
+          <div class="small opacity-75">“Siempre responden y llegan rápido.”</div>
+          <div class="small mt-2">— Cliente hogar</div>
+        </div>
+      </div>
     </div>
-
-    <div class="col-md-6">
-      <label class="form-label fw-semibold">Tipo</label>
-      <select name="tipo" class="form-select" required>
-        <option disabled selected>Selecciona…</option>
-        <option>Petición</option>
-        <option>Queja</option>
-        <option>Reclamo</option>
-        <option>Sugerencia</option>
-      </select>
-    </div>
-
-    <div class="col-12">
-      <label class="form-label fw-semibold">Asunto</label>
-      <input type="text" name="asunto" class="form-control" required>
-    </div>
-
-    <div class="col-12">
-      <label class="form-label fw-semibold">Mensaje</label>
-      <textarea name="mensaje" class="form-control" rows="5" required></textarea>
-    </div>
-
-    <!-- ✅ CAPTCHA -->
-    <div class="col-12">
-      <div data-netlify-recaptcha="true"></div>
-    </div>
-
-    <div class="col-12 d-flex justify-content-end">
-      <button type="submit" class="btn btn-primary">Enviar PQR</button>
-    </div>
-  </div>
-</form>
-
-
-
-
-
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
+  </section>
 
   <!-- FOOTER -->
   <footer class="saqua-footer">
     <div class="footer-container">
-      <div class="footer-brand">
+      <div class="footer-brand reveal" data-anim="left">
         <h2>SAQUA</h2>
         <p>
           Comprometidos con la calidad del agua y el bienestar de nuestra comunidad.
@@ -271,14 +408,14 @@
         </p>
       </div>
 
-      <div class="footer-info">
+      <div class="footer-info reveal" data-anim="up">
         <h4>Información</h4>
         <p class="footer-row"><span class="dot">•</span> Dirección: Calle 123 #45-67, Ciudad Temporal</p>
         <p class="footer-row"><span class="dot">•</span> Teléfono: +57 300 123 4567</p>
         <p class="footer-row"><span class="dot">•</span> Horario: Lunes a Viernes · 8:00 AM – 5:00 PM</p>
       </div>
 
-      <div class="footer-social">
+      <div class="footer-social reveal" data-anim="right">
         <h4>Síguenos</h4>
         <a href="#" class="social-link">Facebook</a>
       </div>
@@ -289,191 +426,520 @@
     </div>
   </footer>
 
+  <!-- WhatsApp flotante -->
+  <a class="wa-float" href="https://wa.me/573001234567" target="_blank" rel="noopener">
+    <div class="wa-btn">💬 WhatsApp</div>
+  </a>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script src="index.js"></script>
+
+  <script>
+    // ===== Animaciones on-scroll con IntersectionObserver =====
+    (function () {
+      const els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window) || !els.length) {
+        els.forEach(el => el.classList.add('is-visible'));
+        return;
+      }
+
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: "0px 0px -10% 0px" });
+
+      els.forEach(el => io.observe(el));
+    })();
+  </script>
+
+  <style>
+    :root{
+      --primary:#1E88E5;
+      --primary2:#4DABF7;
+      --bg:#E9F1F7;
+      --text:#1F2937;
+      --muted:#6B7280;
+      --card:#FFFFFF;
+      --shadow: 0 14px 35px rgba(0,0,0,.08);
+    }
+
+    html, body { height: 100%; }
+    html { scroll-behavior: smooth; }
+
+    body{
+      margin:0;
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .page-content{ flex:1; }
+    .eslogan{ font-size: 20px; }
+
+    /* MENU */
+    .aqua-header{
+      position:sticky;
+      top:0;
+      z-index:1000;
+      padding:14px 0;
+      backdrop-filter: blur(8px);
+    }
+
+    .aqua-menu{
+      max-width:1100px;
+      margin:0 auto;
+      display:flex;
+      justify-content:center;
+      gap:26px;
+      padding:12px 18px;
+      border-radius:16px;
+      background: linear-gradient(135deg, var(--primary), var(--primary2));
+      box-shadow: 0 10px 25px rgba(0,0,0,.18);
+      flex-wrap: wrap;
+    }
+
+    .aqua-menu a{
+      text-decoration:none;
+      color:#fff;
+      font-size:14px;
+      font-weight:800;
+      transition: all .25s ease;
+      opacity:.98;
+    }
+
+    .aqua-menu a:hover{
+      opacity:.92;
+      transform: translateY(-2px);
+    }
+
+    /* TITULO */
+    .aqua-title{
+      position:relative;
+      height:240px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .aqua-text{
+      position:absolute;
+      font-size:110px;
+      font-weight:900;
+      letter-spacing:6px;
+      text-transform:uppercase;
+    }
+
+    .aqua-text.border{
+      color:transparent;
+      -webkit-text-stroke:2px var(--primary);
+    }
+
+    .aqua-text.wave{
+      color: var(--primary2);
+      animation: wave 4s ease-in-out infinite;
+    }
+
+    @keyframes wave{
+      0%,100%{
+        clip-path: polygon(
+          0% 45%, 10% 48%, 25% 55%, 40% 60%, 55% 58%,
+          70% 52%, 85% 48%, 100% 45%, 100% 100%, 0% 100%
+        );
+      }
+      50%{
+        clip-path: polygon(
+          0% 60%, 15% 65%, 30% 68%, 45% 62%, 60% 55%,
+          75% 48%, 90% 45%, 100% 48%, 100% 100%, 0% 100%
+        );
+      }
+    }
+
+    /* ====== SECCIONES ====== */
+    .section-pad{ padding: 72px 0; }
+    .section-title{
+      font-weight: 900;
+      letter-spacing: .2px;
+      margin-bottom: 8px;
+    }
+    .section-sub{
+      color: var(--muted);
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    /* ====== TARJETAS PRO ====== */
+    .card-pro{
+      background: var(--card);
+      border: 1px solid rgba(31,41,55,.08);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+    .card-pro .card-pro-body{ padding: 18px; }
+
+    .feature-card{
+      background: var(--card);
+      border: 1px solid rgba(31,41,55,.08);
+      border-radius: 16px;
+      padding: 16px;
+      height: 100%;
+      box-shadow: 0 10px 22px rgba(0,0,0,.06);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .feature-card:hover{
+      transform: translateY(-4px);
+      box-shadow: 0 18px 38px rgba(0,0,0,.10);
+    }
+    .feature-icon{
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background: rgba(30,136,229,.10);
+      color: var(--primary);
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    /* HERO */
+    .hero-pill{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(30,136,229,.10);
+      color: var(--primary);
+      font-weight: 800;
+      font-size: 13px;
+    }
+    .hero-badges{
+      display:flex;
+      gap:10px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+    .hero-badge{
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.85);
+      border: 1px solid rgba(31,41,55,.08);
+      font-size: 13px;
+      color: var(--text);
+    }
+
+    /* ACTIVIDADES */
+    .actividad-img{
+      height: 350px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 14px;
+    }
+
+    /* QUIENES SOMOS */
+    .quienessomos { font-size: 32px; }
+    .quienes-texto { max-width: 760px; font-size: 16px; }
+    .imagenlogo { height: 200px; width: 220px; object-fit: contain; }
+
+    /* FORM */
+    .form-control, .form-select{
+      border-radius: 12px;
+      border-color: rgba(31,41,55,.12);
+    }
+    .btn-primary{
+      background: var(--primary);
+      border-color: var(--primary);
+      font-weight: 800;
+    }
+    .btn-primary:hover{ opacity:.95; }
+    .btn-outline-primary{
+      border-color: var(--primary);
+      color: var(--primary);
+      font-weight: 800;
+      border-radius: 12px;
+    }
+
+    /* WhatsApp flotante */
+    .wa-float{
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 9999;
+      text-decoration:none;
+    }
+    .wa-btn{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      background: #25D366;
+      color:#fff;
+      padding: 12px 14px;
+      border-radius: 999px;
+      box-shadow: 0 14px 30px rgba(0,0,0,.18);
+      font-weight: 900;
+    }
+    .wa-btn:hover{ opacity:.95; transform: translateY(-1px); }
+
+    /* ===== Animaciones on-scroll ===== */
+    .reveal{
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity .75s ease, transform .75s ease;
+      will-change: opacity, transform;
+    }
+    .reveal[data-anim="left"]{ transform: translateX(-24px); }
+    .reveal[data-anim="right"]{ transform: translateX(24px); }
+    .reveal[data-anim="down"]{ transform: translateY(-18px); }
+    .reveal[data-anim="zoom"]{ transform: scale(.96); }
+
+    .reveal.is-visible{
+      opacity: 1;
+      transform: translate(0,0) scale(1);
+    }
+
+    .delay-1{ transition-delay: .06s; }
+    .delay-2{ transition-delay: .12s; }
+    .delay-3{ transition-delay: .18s; }
+    .delay-4{ transition-delay: .24s; }
+    .delay-5{ transition-delay: .30s; }
+
+    @media (prefers-reduced-motion: reduce){
+      .reveal, .feature-card{ transition: none !important; }
+      .reveal{ opacity:1 !important; transform:none !important; }
+    }
+
+    /* FOOTER */
+    .saqua-footer{
+      margin-top:auto;
+      background: #3aa0f3;
+      color:#fff;
+    }
+
+    .footer-container{
+      max-width:1100px;
+      margin:0 auto;
+      padding:42px 22px;
+      display:flex;
+      justify-content:space-between;
+      gap:40px;
+      flex-wrap:wrap;
+    }
+
+    .footer-brand{ flex: 1 1 320px; }
+    .footer-brand h2{
+      margin:0 0 10px;
+      font-weight:900;
+      letter-spacing:2px;
+      font-size:40px;
+    }
+    .footer-brand p{
+      margin:0;
+      opacity:.95;
+      line-height:1.6;
+      max-width:420px;
+    }
+
+    .footer-info{ flex: 1 1 320px; }
+    .footer-social{ flex: 0 0 200px; }
+
+    .footer-info h4,
+    .footer-social h4{
+      margin: 0 0 14px;
+      font-weight:900;
+      font-size:26px;
+    }
+
+    .footer-row{
+      margin:10px 0;
+      font-size:14px;
+      display:flex;
+      gap:10px;
+      align-items:flex-start;
+      opacity:.98;
+    }
+
+    .dot{
+      color:#ff5a5a;
+      font-weight:900;
+      line-height:1;
+      margin-top:2px;
+    }
+
+    .social-link{
+      display:inline-block;
+      text-decoration:none;
+      color:#fff;
+      font-weight:800;
+      padding:10px 18px;
+      border-radius:999px;
+      background: rgba(255,255,255,.18);
+      transition: .25s;
+    }
+    .social-link:hover{
+      background: rgba(255,255,255,.28);
+      transform: translateY(-2px);
+    }
+
+    .footer-bottom{
+      text-align:center;
+      padding:16px 10px;
+      background: rgba(0,0,0,.12);
+      font-size:13px;
+      letter-spacing:.4px;
+    }
+
+
+
+
+
+    /* =========================
+   RESPONSIVE PRO (MÓVIL/TABLET)
+   Pega esto AL FINAL del <style>
+   ========================= */
+
+/* Ajustes generales para pantallas medianas y pequeñas */
+@media (max-width: 992px){
+  .section-pad{ padding: 56px 0; }
+
+  /* Menú: que no se vea tan ancho y no se “desparrame” */
+  .aqua-menu{
+    max-width: 94%;
+    gap: 14px;
+    padding: 10px 12px;
+    border-radius: 14px;
+  }
+  .aqua-menu a{
+    font-size: 13px;
+  }
+
+  /* Hero */
+  .aqua-title{ height: 210px; }
+  .aqua-text{ font-size: 90px; letter-spacing: 4px; }
+
+  /* Actividades imágenes */
+  .actividad-img{ height: 300px; }
+
+  /* Quiénes */
+  .imagenlogo{ height: 180px; width: 200px; }
+}
+
+/* Tablet pequeña / phablet */
+@media (max-width: 768px){
+  .section-pad{ padding: 48px 0; }
+
+  /* Título */
+  .aqua-title{ height: 190px; }
+  .aqua-text{ font-size: 74px; letter-spacing: 3px; }
+
+  .eslogan{ font-size: 16px; padding: 0 14px; }
+
+  /* Botones en hero: full width en móvil */
+  #inicio .btn{
+    width: 100%;
+  }
+  #inicio .d-flex.gap-2{
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* Badges: se acomodan mejor */
+  .hero-badges{
+    gap: 8px;
+  }
+  .hero-badge{
+    flex: 1 1 auto;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  /* Cards: menos padding */
+  .feature-card{ padding: 14px; border-radius: 14px; }
+  .feature-icon{ width: 42px; height: 42px; border-radius: 12px; }
+
+  /* Carrusel */
+  .actividad-img{ height: 260px; }
+
+  /* Quienes somos: mejor centrado en móvil */
+  #quienes-somos .text-lg-end,
+  #quienes-somos .text-lg-start{
+    text-align: center !important;
+  }
+  .quienes-texto{
+    padding: 0 14px;
+    font-size: 15px;
+  }
+
+  /* Cobertura tarjetas */
+  #cobertura .feature-card{
+    text-align: center;
+  }
+
+  /* PQR */
+  #quejas form{
+    padding: 18px !important;
+  }
+
+  /* Footer: columnas una debajo de otra */
+  .footer-container{
+    padding: 34px 18px;
+    gap: 22px;
+  }
+  .footer-brand h2{ font-size: 34px; }
+  .footer-info h4, .footer-social h4{ font-size: 22px; }
+}
+
+/* Móvil */
+@media (max-width: 480px){
+  :root{
+    --shadow: 0 10px 26px rgba(0,0,0,.08);
+  }
+
+  /* Menú más compacto */
+  .aqua-header{ padding: 10px 0; }
+
+  /* Título SAQUA */
+  .aqua-title{ height: 165px; }
+  .aqua-text{ font-size: 56px; letter-spacing: 2px; }
+  .hero-pill{ font-size: 12px; }
+
+  /* Textos */
+  h2.section-title{ font-size: 22px; }
+  .section-sub{ font-size: 14px; padding: 0 10px; }
+
+  /* Actividades */
+  .actividad-img{ height: 220px; }
+
+  /* WhatsApp flotante más pequeño */
+  .wa-float{ right: 12px; bottom: 12px; }
+  .wa-btn{ padding: 10px 12px; font-size: 14px; }
+
+  /* Inputs */
+  .form-control, .form-select{ font-size: 14px; }
+
+  /* Footer */
+  .footer-bottom{ font-size: 12px; }
+}
+
+/* Mejoras de usabilidad: evita que el menú tape el título al saltar con #anclas */
+section[id]{
+  scroll-margin-top: 110px;
+}
+
+@media (max-width: 768px){
+  section[id]{ scroll-margin-top: 140px; }
+}
+
+
+
+
+  </style>
 </body>
 </html>
-
-<style>
-  html, body { height: 100%; }
-
-  body{
-    margin:0;
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    background-color:#d9dfe6;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .page-content{ flex:1; }
-
-  .eslogan{ font-size: 20px; }
-
-  /* MENU */
-  .aqua-header{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    padding:18px 0;
-  }
-
-  .aqua-menu{
-    max-width:900px;
-    margin:0 auto;
-    display:flex;
-    justify-content:center;
-    gap:40px;
-    padding:14px 28px;
-    border-radius:16px;
-    background: linear-gradient(135deg, #1e88e5, #4dabf7);
-    box-shadow: 0 10px 25px rgba(0,0,0,.25);
-  }
-
-  .aqua-menu a{
-    text-decoration:none;
-    color:#fff;
-    font-size:15px;
-    font-weight:600;
-    transition: all .25s ease;
-  }
-
-  .aqua-menu a:hover{
-    opacity:.9;
-    transform: translateY(-2px);
-  }
-
-  /* TITULO */
-  .aqua-title{
-    position:relative;
-    height:260px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  }
-
-  .aqua-text{
-    position:absolute;
-    font-size:120px;
-    font-weight:900;
-    letter-spacing:6px;
-    text-transform:uppercase;
-  }
-
-  .aqua-text.border{
-    color:transparent;
-    -webkit-text-stroke:2px #1e88e5;
-  }
-
-  .aqua-text.wave{
-    color:#4dabf7;
-    animation: wave 4s ease-in-out infinite;
-  }
-
-  @keyframes wave{
-    0%,100%{
-      clip-path: polygon(
-        0% 45%, 10% 48%, 25% 55%, 40% 60%, 55% 58%,
-        70% 52%, 85% 48%, 100% 45%, 100% 100%, 0% 100%
-      );
-    }
-    50%{
-      clip-path: polygon(
-        0% 60%, 15% 65%, 30% 68%, 45% 62%, 60% 55%,
-        75% 48%, 90% 45%, 100% 48%, 100% 100%, 0% 100%
-      );
-    }
-  }
-
-  /* ACTIVIDADES */
-  .actividad-img{
-    height: 350px;
-    width: 100%;
-    object-fit: cover;
-  }
-
-  /* QUIENES SOMOS */
-  .quienessomos { font-size: 32px; }
-  .quienes-texto { max-width: 700px; font-size: 16px; }
-  .imagenlogo { height: 200px; width: 220px; object-fit: contain; }
-
-  /* FOOTER */
-  .saqua-footer{
-    margin-top:auto;
-    background: #3aa0f3;
-    color:#fff;
-  }
-
-  .footer-container{
-    max-width:1100px;
-    margin:0 auto;
-    padding:42px 22px;
-    display:flex;
-    justify-content:space-between;
-    gap:40px;
-    flex-wrap:wrap;
-  }
-
-  .footer-brand{ flex: 1 1 320px; }
-  .footer-brand h2{
-    margin:0 0 10px;
-    font-weight:900;
-    letter-spacing:2px;
-    font-size:40px;
-  }
-  .footer-brand p{
-    margin:0;
-    opacity:.95;
-    line-height:1.6;
-    max-width:420px;
-  }
-
-  .footer-info{ flex: 1 1 320px; }
-  .footer-social{ flex: 0 0 200px; }
-
-  .footer-info h4,
-  .footer-social h4{
-    margin: 0 0 14px;
-    font-weight:900;
-    font-size:26px;
-  }
-
-  .footer-row{
-    margin:10px 0;
-    font-size:14px;
-    display:flex;
-    gap:10px;
-    align-items:flex-start;
-    opacity:.98;
-  }
-
-  .dot{
-    color:#ff5a5a;
-    font-weight:900;
-    line-height:1;
-    margin-top:2px;
-  }
-
-  .social-link{
-    display:inline-block;
-    text-decoration:none;
-    color:#fff;
-    font-weight:800;
-    padding:10px 18px;
-    border-radius:999px;
-    background: rgba(255,255,255,.18);
-    transition: .25s;
-  }
-  .social-link:hover{
-    background: rgba(255,255,255,.28);
-    transform: translateY(-2px);
-  }
-
-  .footer-bottom{
-    text-align:center;
-    padding:16px 10px;
-    background: rgba(0,0,0,.12);
-    font-size:13px;
-    letter-spacing:.4px;
-  }
-</style>
