@@ -89,16 +89,33 @@
 
 <br><br>
 
-<section class="container py-5" id="actividades">
+
+
+
+
+  <section class="container py-5" id="actividades">
   <div class="text-center mb-4">
     <h2 class="fw-bold">Actividades</h2>
-    <p class="opacity-75">
-      Actividades realizadas con nuestra comunidad.
-    </p>
+    <p class="opacity-75 mb-0">Actividades realizadas con nuestra comunidad.</p>
   </div>
 
-  <div id="actividadesGrid" class="row g-3"></div>
+  <div id="actividadesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+    <div class="carousel-inner" id="actividadesSlides"></div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#actividadesCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#actividadesCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
 </section>
+
+
+
 
 
 
@@ -151,8 +168,8 @@
 
 
 .actividad-img {
-  height: 220px;        /* 🔹 ajusta este valor a tu gusto */
-  object-fit: cover;   /* 🔹 recorta sin deformar */
+  height: 350px;        /* 🔹 ajusta este valor a tu gusto */
+  /* 🔹 recorta sin deformar */
   width: 100%;
 }
 
