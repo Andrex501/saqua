@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SAQUA</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="/imagen/logo.png">
 </head>
 
 <body>
-
   <!-- HEADER / MENU -->
   <header class="aqua-header">
     <nav class="aqua-menu">
@@ -16,7 +17,6 @@
       <a href="#quienes-somos">Quiénes somos</a>
       <a href="#actividades">Actividades</a>
       <a href="#quejas">Quejas y reclamos</a>
-  
     </nav>
   </header>
 
@@ -26,93 +26,211 @@
       <h1 class="aqua-text border">SAQUA</h1>
       <h1 class="aqua-text wave">SAQUA</h1>
     </div>
-    <center>
-      <b class="eslogan" >Por ti , por mí y por los que vendrán</b>
-    </center>
 
-<br><br>
-
-
-
-<section class="container py-4" id="inicio">
-  <div class="row align-items-center g-4">
-    <div class="col-lg-6">
-      <h2 class="fw-bold">Agua Potable</h2>
-      <p class="lead mb-3">
-        Hidratación segura para tu hogar y empresa. Entregas rápidas y atención confiable.
-      </p>
-      <div class="d-flex gap-2 flex-wrap">
-        <a class="btn btn-primary btn-lg" href="https://wa.me/573001234567" target="_blank">
-          Contactar vía WhatsApp
-        </a>
-  
-      </div>
-      <p class="mt-3 mb-0 small opacity-75">
-        Horario: Lun–Vie 8:00 AM – 5:00 PM · Cobertura: tu zona aquí
-      </p>
+    <div class="text-center">
+      <b class="eslogan">Por ti, por mí y por los que vendrán</b>
     </div>
 
-    <div class="col-lg-6">
-      <div class="p-4 bg-white rounded-4 shadow-sm">
-        <h5 class="fw-bold mb-3">¿Por qué SAQUA?</h5>
-        <div class="row g-3">
-          <div class="col-6">
-            <div class="p-3 border rounded-3 h-100">
-              💧 <b>Potable</b>
-              <div class="small opacity-75">Agua tratada y segura</div>
-            </div>
+    <br><br>
+
+    <!-- INICIO -->
+    <section class="container py-4" id="inicio">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <h2 class="fw-bold">Agua Potable</h2>
+          <p class="lead mb-3">
+            Hidratación segura para tu hogar y empresa. Entregas rápidas y atención confiable.
+          </p>
+
+          <div class="d-flex gap-2 flex-wrap">
+            <a class="btn btn-primary btn-lg" href="https://wa.me/573001234567" target="_blank" rel="noopener">
+              Contactar vía WhatsApp
+            </a>
           </div>
-          <div class="col-6">
-            <div class="p-3 border rounded-3 h-100">
-              🚚 <b>Domicilio</b>
-              <div class="small opacity-75">Entrega rápida</div>
+
+          <p class="mt-3 mb-0 small opacity-75">
+            Horario: Lun–Vie 8:00 AM – 5:00 PM · Cobertura: tu zona aquí
+          </p>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="p-4 bg-white rounded-4 shadow-sm">
+            <h5 class="fw-bold mb-3">¿Por qué SAQUA?</h5>
+
+            <div class="row g-3">
+              <div class="col-6">
+                <div class="p-3 border rounded-3 h-100">
+                  💧 <b>Potable</b>
+                  <div class="small opacity-75">Agua tratada y segura</div>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="p-3 border rounded-3 h-100">
+                  🚚 <b>Domicilio</b>
+                  <div class="small opacity-75">Entrega rápida</div>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="p-3 border rounded-3 h-100">
+                  🧪 <b>Calidad</b>
+                  <div class="small opacity-75">Proceso controlado</div>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="p-3 border rounded-3 h-100">
+                  ♻️ <b>Retornable</b>
+                  <div class="small opacity-75">Cuidamos el ambiente</div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-6">
-            <div class="p-3 border rounded-3 h-100">
-              🧪 <b>Calidad</b>
-              <div class="small opacity-75">Proceso controlado</div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="p-3 border rounded-3 h-100">
-              ♻️ <b>Retornable</b>
-              <div class="small opacity-75">Cuidamos el ambiente</div>
-            </div>
+
           </div>
         </div>
       </div>
+    </section>
+
+    <br><br>
+
+    <!-- ACTIVIDADES (CARRUSEL) -->
+    <section class="container py-5" id="actividades">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Actividades</h2>
+        <p class="opacity-75 mb-0">Actividades realizadas con nuestra comunidad.</p>
+      </div>
+
+      <div id="actividadesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500" data-bs-pause="false">
+        <div class="carousel-inner" id="actividadesSlides"></div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#actividadesCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#actividadesCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- QUIÉNES SOMOS -->
+  <section class="container py-5" id="quienes-somos">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold quienessomos">¿Quiénes somos?</h2>
+      <p class="mt-3 opacity-75 mx-auto quienes-texto">
+        Somos una empresa comprometida con el bienestar de nuestra comunidad,
+        dedicada a ofrecer soluciones responsables y sostenibles mediante el
+        suministro de agua potable y el cuidado del medio ambiente.
+      </p>
+    </div>
+
+    <div class="row align-items-center g-4 mt-4">
+      <div class="col-lg-4 text-center text-lg-end">
+        <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+          <h4 class="fw-bold mb-3">Misión</h4>
+          <p class="opacity-75 mb-0">
+            Proporcionar servicios de alta calidad que contribuyan al desarrollo
+            sostenible, promoviendo el uso responsable de los recursos y generando
+            impacto positivo en nuestra comunidad.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 text-center">
+        <img src="./imagen/logo.png" alt="Logo SAQUA" class="imagenlogo my-3">
+      </div>
+
+      <div class="col-lg-4 text-center text-lg-start">
+        <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+          <h4 class="fw-bold mb-3">Visión</h4>
+          <p class="opacity-75 mb-0">
+            Ser reconocidos como una empresa líder en soluciones sostenibles,
+            destacándonos por la excelencia en el servicio, la innovación y el
+            compromiso con el medio ambiente.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br><br>
+
+
+
+
+
+
+
+<section class="container py-5" id="quejas">
+  <div class="text-center mb-4">
+    <h2 class="fw-bold">PQR</h2>
+    <p class="opacity-75 mb-0">Peticiones, Quejas y Reclamos. Te responderemos lo antes posible.</p>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-lg-7">
+      <form name="pqr" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="p-4 bg-white rounded-4 shadow-sm">
+        <!-- requerido por Netlify -->
+        <input type="hidden" name="form-name" value="pqr" />
+
+        <!-- anti spam invisible -->
+        <p class="d-none">
+          <label>No llenes esto: <input name="bot-field" /></label>
+        </p>
+
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label fw-semibold">Nombre</label>
+            <input type="text" name="nombre" class="form-control" placeholder="Tu nombre" required>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label fw-semibold">Correo</label>
+            <input type="email" name="correo" class="form-control" placeholder="tucorreo@email.com" required>
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label fw-semibold">Teléfono</label>
+            <input type="tel" name="telefono" class="form-control" placeholder="+57 300 000 0000">
+          </div>
+
+          <div class="col-md-6">
+            <label class="form-label fw-semibold">Tipo</label>
+            <select name="tipo" class="form-select" required>
+              <option value="" selected disabled>Selecciona…</option>
+              <option>Petición</option>
+              <option>Queja</option>
+              <option>Reclamo</option>
+              <option>Sugerencia</option>
+            </select>
+          </div>
+
+          <div class="col-12">
+            <label class="form-label fw-semibold">Asunto</label>
+            <input type="text" name="asunto" class="form-control" placeholder="Ej: Solicitud de información" required>
+          </div>
+
+          <div class="col-12">
+            <label class="form-label fw-semibold">Mensaje</label>
+            <textarea name="mensaje" class="form-control" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+          </div>
+
+          <div class="col-12 d-flex justify-content-between align-items-center flex-wrap gap-2">
+            <small class="opacity-75">Al enviar, aceptas ser contactado para dar respuesta a tu solicitud.</small>
+            <button type="submit" class="btn btn-primary px-4">Enviar PQR</button>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
 </section>
 
 
-<br><br>
-
-
-
-
-
-  <section class="container py-5" id="actividades">
-  <div class="text-center mb-4">
-    <h2 class="fw-bold">Actividades</h2>
-    <p class="opacity-75 mb-0">Actividades realizadas con nuestra comunidad.</p>
-  </div>
-
-  <div id="actividadesCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
-    <div class="carousel-inner" id="actividadesSlides"></div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#actividadesCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
-
-    <button class="carousel-control-next" type="button" data-bs-target="#actividadesCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Siguiente</span>
-    </button>
-  </div>
-</section>
 
 
 
@@ -120,14 +238,10 @@
 
 
 
-  </main>
 
-
-
-  <!-- FOOTER (MISMO ESTILO DE TU CAPTURA) -->
+  <!-- FOOTER -->
   <footer class="saqua-footer">
     <div class="footer-container">
-
       <div class="footer-brand">
         <h2>SAQUA</h2>
         <p>
@@ -138,7 +252,6 @@
 
       <div class="footer-info">
         <h4>Información</h4>
-
         <p class="footer-row"><span class="dot">•</span> Dirección: Calle 123 #45-67, Ciudad Temporal</p>
         <p class="footer-row"><span class="dot">•</span> Teléfono: +57 300 123 4567</p>
         <p class="footer-row"><span class="dot">•</span> Horario: Lunes a Viernes · 8:00 AM – 5:00 PM</p>
@@ -148,7 +261,6 @@
         <h4>Síguenos</h4>
         <a href="#" class="social-link">Facebook</a>
       </div>
-
     </div>
 
     <div class="footer-bottom">
@@ -158,22 +270,11 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script src="index.js"></script>
-
 </body>
 </html>
 
 <style>
-  /* === CLAVE PARA QUE EL FOOTER QUEDE ABAJO === */
   html, body { height: 100%; }
-
-
-.actividad-img {
-  height: 350px;        /* 🔹 ajusta este valor a tu gusto */
-  /* 🔹 recorta sin deformar */
-  width: 100%;
-}
-
-
 
   body{
     margin:0;
@@ -184,15 +285,11 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  .eslogan{
-    font-size: 20px;
-  }
+  .page-content{ flex:1; }
 
-  .page-content{
-    flex:1;            /* empuja el footer al final */
-  }
+  .eslogan{ font-size: 20px; }
 
-  /* === MENU (igual que el tuyo) === */
+  /* MENU */
   .aqua-header{
     position:sticky;
     top:0;
@@ -203,14 +300,11 @@
   .aqua-menu{
     max-width:900px;
     margin:0 auto;
-
     display:flex;
     justify-content:center;
     gap:40px;
-
     padding:14px 28px;
     border-radius:16px;
-
     background: linear-gradient(135deg, #1e88e5, #4dabf7);
     box-shadow: 0 10px 25px rgba(0,0,0,.25);
   }
@@ -228,7 +322,7 @@
     transform: translateY(-2px);
   }
 
-  /* === TITULO AGUA === */
+  /* TITULO */
   .aqua-title{
     position:relative;
     height:260px;
@@ -270,10 +364,22 @@
     }
   }
 
-  /* === FOOTER (estilo como tu captura) === */
+  /* ACTIVIDADES */
+  .actividad-img{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* QUIENES SOMOS */
+  .quienessomos { font-size: 32px; }
+  .quienes-texto { max-width: 700px; font-size: 16px; }
+  .imagenlogo { height: 200px; width: 220px; object-fit: contain; }
+
+  /* FOOTER */
   .saqua-footer{
-    margin-top:auto; /* (por si acaso) */
-    background: #3aa0f3;          /* tono azulado como tu imagen */
+    margin-top:auto;
+    background: #3aa0f3;
     color:#fff;
   }
 
@@ -292,7 +398,7 @@
     margin:0 0 10px;
     font-weight:900;
     letter-spacing:2px;
-    font-size:40px;              /* grande como en tu captura */
+    font-size:40px;
   }
   .footer-brand p{
     margin:0;
@@ -321,7 +427,7 @@
   }
 
   .dot{
-    color:#ff5a5a; /* puntico rojito */
+    color:#ff5a5a;
     font-weight:900;
     line-height:1;
     margin-top:2px;
