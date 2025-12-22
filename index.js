@@ -32,7 +32,7 @@ async function cargarActividades() {
         <div class="card h-100 shadow-sm">
           ${
             a.imagen
-              ? `<img src="${a.imagen}" class="card-img-top" alt="${a.titulo}">`
+              ? `<img src="${a.imagen}" class="card-img-top actividad-img" alt="${a.titulo}">`
               : ""
           }
           <div class="card-body">
