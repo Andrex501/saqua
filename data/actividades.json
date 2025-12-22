@@ -1,3 +1,11 @@
 {
-  "items": []
+  "items": [
+    {
+      "id": "232",
+      "titulo": "actividad de mision",
+      "texto": "sisjdiasdasdas",
+      "imagen": "/assets/uploads/mision.jpeg",
+      "fecha": "2025-12-31"
+    }
+  ]
 }
