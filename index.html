@@ -11,105 +11,168 @@
 
 <body>
 
-  <!-- HEADER / MENU -->
-  <header class="aqua-header">
-    <nav class="aqua-menu">
-      <a href="#inicio">Inicio</a>
-      <a href="#como-funciona">Cómo funciona</a>
-      <a href="#actividades">Actividades</a>
-      <a href="#quienes-somos">Quiénes somos</a>
-      <a href="#cobertura">Cobertura</a>
-      <a href="#quejas">PQR</a>
-    </nav>
-  </header>
-
   <!-- CONTENIDO -->
   <main class="page-content">
 
-    <!-- HERO -->
-    <section class="container py-4" id="inicio">
-      <div class="aqua-title reveal" data-anim="zoom">
-        <h1 class="aqua-text border">SAQUA</h1>
-        <h1 class="aqua-text wave">SAQUA</h1>
+  <!-- HEADER (igual al de la imagen) -->
+<header class="saqua-header">
+  <!-- Topbar -->
+  <div class="saqua-topbar">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="saqua-topbar-left">
+        <span class="me-3">📞 +57 300 123 4567</span>
+        <span>✉️ info@saqua.com</span>
       </div>
 
-      <div class="text-center reveal delay-1" data-anim="up">
-        <b class="eslogan">Por ti, por mí y por los que vendrán</b>
-      </div>
+ 
+    </div>
+  </div>
 
-      <div class="row align-items-center g-4 mt-4">
-        <div class="col-lg-6 reveal" data-anim="left">
-          <span class="hero-pill">💧 Agua potable en Santander</span>
+  <!-- Navbar -->
+  <div class="saqua-navwrap">
+    <div class="container d-flex align-items-center justify-content-between">
+      <!-- Logo grande a la izquierda -->
+      <a href="#inicio" class="saqua-brand d-flex align-items-center gap-2">
+        <img src="./imagen/logo.png" alt="Logo SAQUA" class="saqua-brand-logo">
+      </a>
 
-          <h2 class="fw-bold mt-3">Agua potable confiable para hogares, empresas y eventos</h2>
+      <!-- Links centrados -->
+      <nav class="saqua-nav d-none d-lg-flex align-items-center gap-4">
+        <a href="#inicio" class="saqua-link active">Inicio</a>
+        <a href="#como-funciona" class="saqua-link">Cómo funciona</a>
+        <a href="#quienes-somos" class="saqua-link">Nosotros</a>
+             
+        <a href="#testimonios" class="saqua-link">Testimonios</a>
+        <a href="#actividades" class="saqua-link">Actividades</a>
+      </nav>
 
-          <p class="lead mb-3" style="color: var(--muted);">
-            Entregas rápidas · Atención clara · Envases retornables · Compromiso ambiental.
-          </p>
+      <!-- Botón derecha -->
+      <a class="saqua-btn" href="https://wa.me/573001234567" target="_blank" rel="noopener">Contáctanos</a>
 
-          <div class="d-flex gap-2 flex-wrap">
-            <a class="btn btn-primary btn-lg" href="https://wa.me/573001234567" target="_blank" rel="noopener">
-              Solicitar domicilio
-            </a>
-            <a class="btn btn-outline-primary btn-lg" href="#quejas">
-              PQR / Atención
-            </a>
+      <!-- menú móvil (opcional) -->
+      <button class="btn btn-outline-primary d-lg-none ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav">
+        ☰
+      </button>
+    </div>
+  </div>
+</header>
+
+
+
+
+
+<!-- OFFCANVAS MÓVIL -->
+<div class="offcanvas offcanvas-end saqua-offcanvas" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+  <div class="offcanvas-header saqua-offcanvas-header">
+    <h5 class="offcanvas-title fw-bold" id="mobileNavLabel">Menú</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+  </div>
+
+  <div class="offcanvas-body saqua-offcanvas-body">
+    <a class="saqua-mobile-link" href="#inicio" data-bs-dismiss="offcanvas">Inicio</a>
+    <a class="saqua-mobile-link" href="#como-funciona" data-bs-dismiss="offcanvas">Cómo funciona</a>
+    <a class="saqua-mobile-link" href="#quienes-somos" data-bs-dismiss="offcanvas">Nosotros</a>
+    <a class="saqua-mobile-link" href="#testimonios" data-bs-dismiss="offcanvas">Testimonios</a>
+    <a class="saqua-mobile-link" href="#actividades" data-bs-dismiss="offcanvas">Actividades</a>
+
+    <hr class="saqua-mobile-sep">
+
+    <a class="saqua-mobile-cta" href="https://wa.me/573001234567" target="_blank" rel="noopener">
+      Contáctanos
+    </a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- HERO BANNER (como la imagen) -->
+<section id="inicio" class="saqua-hero">
+  <div class="container saqua-hero-inner">
+    <div class="row align-items-center g-4">
+      <!-- IZQUIERDA: círculo grande -->
+      <div class="col-lg-5">
+        <div class="saqua-badge-wrap">
+          <div class="saqua-badge-ring">
+            <img src="./imagen/logo.png" alt="SAQUA" class="saqua-badge-logo">
           </div>
-
-          <div class="hero-badges">
-            <div class="hero-badge">🚚 Domicilio rápido</div>
-            <div class="hero-badge">🧪 Calidad controlada</div>
-            <div class="hero-badge">♻️ Retornable</div>
-            <div class="hero-badge">📍 Santander</div>
-          </div>
-
-          <p class="mt-3 mb-0 small opacity-75">
-            Horario: Lun–Vie 8:00 AM – 5:00 PM · Cobertura: Santander (área metropolitana y alrededores)
-          </p>
         </div>
+      </div>
 
-        <div class="col-lg-6 reveal" data-anim="right">
-          <div class="p-4 bg-white rounded-4 shadow-sm card-pro">
-            <h5 class="fw-bold mb-3">¿Por qué SAQUA?</h5>
+      <!-- DERECHA: texto grande + botones -->
+      <div class="col-lg-7">
+        <h1 class="saqua-hero-title">
+          Recuperamos materiales.<br>
+          Cuidamos el agua.<br>
+          Protegemos el futuro.
+        </h1>
 
-            <div class="row g-3">
-              <div class="col-6 reveal delay-1" data-anim="up">
-                <div class="feature-card">
-                  <div class="feature-icon">💧</div>
-                  <b>Potable</b>
-                  <div class="small opacity-75">Agua tratada y segura</div>
-                </div>
-              </div>
+        <p class="saqua-hero-sub">
+          Empresa de reciclaje y servicio público comprometida con el medio ambiente y la comunidad.
+        </p>
 
-              <div class="col-6 reveal delay-2" data-anim="up">
-                <div class="feature-card">
-                  <div class="feature-icon">🚚</div>
-                  <b>Domicilio</b>
-                  <div class="small opacity-75">Entrega rápida</div>
-                </div>
-              </div>
+        <div class="saqua-hero-actions">
+          <a class="saqua-pill-btn" href="https://wa.me/573001234567" target="_blank" rel="noopener">
+            📞 Contáctanos
+          </a>
+          <a class="saqua-pill-btn light" href="tel:+573001234567">
+            📱 +57 300 123 4567
+          </a>
+        </div>
+      </div>
+    </div>
 
-              <div class="col-6 reveal delay-3" data-anim="up">
-                <div class="feature-card">
-                  <div class="feature-icon">🧪</div>
-                  <b>Calidad</b>
-                  <div class="small opacity-75">Proceso controlado</div>
-                </div>
-              </div>
+    <!-- ¿Qué hacemos? + 3 tarjetas -->
+    <div class="saqua-what mt-5">
+      <h2 class="saqua-what-title">¿Qué hacemos?</h2>
 
-              <div class="col-6 reveal delay-4" data-anim="up">
-                <div class="feature-card">
-                  <div class="feature-icon">♻️</div>
-                  <b>Retornable</b>
-                  <div class="small opacity-75">Cuidamos el ambiente</div>
-                </div>
-              </div>
+      <div class="row g-3 mt-2">
+        <div class="col-md-4">
+          <div class="saqua-card">
+            <div class="saqua-card-icon">
+              <!-- Puedes cambiar esto por una imagen: <img src="./assets/uploads/recycle.png"> -->
+              ♻️
             </div>
+            <h4 class="saqua-card-title">Recuperación de materiales</h4>
+            <p class="saqua-card-text">
+              Recolectamos y reciclamos plásticos, metales y cartón.
+            </p>
+          </div>
+        </div>
 
+        <div class="col-md-4">
+          <div class="saqua-card">
+            <div class="saqua-card-icon">💧</div>
+            <h4 class="saqua-card-title">Agua potable confiable</h4>
+            <p class="saqua-card-text">
+              Procesamos agua purificada, segura y de alta calidad.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="saqua-card">
+            <div class="saqua-card-icon">🌱</div>
+            <h4 class="saqua-card-title">Compromiso ambiental y comunitario</h4>
+            <p class="saqua-card-text">
+              Fomentamos el reciclaje y la sostenibilidad en nuestra comunidad.
+            </p>
           </div>
         </div>
       </div>
-    </section>
+
+      <div class="saqua-bottom-slogan mt-3">
+        ¡Por ti, por mí y por los que vendrán!
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- CÓMO FUNCIONA -->
     <section class="container section-pad" id="como-funciona">
@@ -214,7 +277,7 @@
       </div>
     </section>
 
-  </main>
+ 
 
   <!-- QUIÉNES SOMOS -->
   <section class="container section-pad" id="quienes-somos">
@@ -255,6 +318,8 @@
       </div>
     </div>
   </section>
+
+
 
   <!-- COBERTURA -->
   <section class="container section-pad" id="cobertura">
@@ -397,6 +462,8 @@
     </div>
   </section>
 
+   </main>
+
   <!-- FOOTER -->
   <footer class="saqua-footer">
     <div class="footer-container">
@@ -456,523 +523,554 @@
     })();
   </script>
 
-  <style>
-    :root{
-      --primary:#1E88E5;
-      --primary2:#4DABF7;
-      --bg:#E9F1F7;
-      --text:#1F2937;
-      --muted:#6B7280;
-      --card:#FFFFFF;
-      --shadow: 0 14px 35px rgba(0,0,0,.08);
-    }
-
-    html, body { height: 100%; }
-    html { scroll-behavior: smooth; }
-
-    body{
-      margin:0;
-      min-height:100vh;
-      display:flex;
-      flex-direction:column;
-      background: var(--bg);
-      color: var(--text);
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .page-content{ flex:1; }
-    .eslogan{ font-size: 20px; }
-
-    /* MENU */
-    .aqua-header{
-      position:sticky;
-      top:0;
-      z-index:1000;
-      padding:14px 0;
-      backdrop-filter: blur(8px);
-    }
-
-    .aqua-menu{
-      max-width:1100px;
-      margin:0 auto;
-      display:flex;
-      justify-content:center;
-      gap:26px;
-      padding:12px 18px;
-      border-radius:16px;
-      background: linear-gradient(135deg, var(--primary), var(--primary2));
-      box-shadow: 0 10px 25px rgba(0,0,0,.18);
-      flex-wrap: wrap;
-    }
-
-    .aqua-menu a{
-      text-decoration:none;
-      color:#fff;
-      font-size:14px;
-      font-weight:800;
-      transition: all .25s ease;
-      opacity:.98;
-    }
-
-    .aqua-menu a:hover{
-      opacity:.92;
-      transform: translateY(-2px);
-    }
-
-    /* TITULO */
-    .aqua-title{
-      position:relative;
-      height:240px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-    }
-
-    .aqua-text{
-      position:absolute;
-      font-size:110px;
-      font-weight:900;
-      letter-spacing:6px;
-      text-transform:uppercase;
-    }
-
-    .aqua-text.border{
-      color:transparent;
-      -webkit-text-stroke:2px var(--primary);
-    }
-
-    .aqua-text.wave{
-      color: var(--primary2);
-      animation: wave 4s ease-in-out infinite;
-    }
-
-    @keyframes wave{
-      0%,100%{
-        clip-path: polygon(
-          0% 45%, 10% 48%, 25% 55%, 40% 60%, 55% 58%,
-          70% 52%, 85% 48%, 100% 45%, 100% 100%, 0% 100%
-        );
-      }
-      50%{
-        clip-path: polygon(
-          0% 60%, 15% 65%, 30% 68%, 45% 62%, 60% 55%,
-          75% 48%, 90% 45%, 100% 48%, 100% 100%, 0% 100%
-        );
-      }
-    }
-
-    /* ====== SECCIONES ====== */
-    .section-pad{ padding: 72px 0; }
-    .section-title{
-      font-weight: 900;
-      letter-spacing: .2px;
-      margin-bottom: 8px;
-    }
-    .section-sub{
-      color: var(--muted);
-      max-width: 820px;
-      margin: 0 auto;
-    }
-
-    /* ====== TARJETAS PRO ====== */
-    .card-pro{
-      background: var(--card);
-      border: 1px solid rgba(31,41,55,.08);
-      border-radius: 18px;
-      box-shadow: var(--shadow);
-    }
-    .card-pro .card-pro-body{ padding: 18px; }
-
-    .feature-card{
-      background: var(--card);
-      border: 1px solid rgba(31,41,55,.08);
-      border-radius: 16px;
-      padding: 16px;
-      height: 100%;
-      box-shadow: 0 10px 22px rgba(0,0,0,.06);
-      transition: transform .25s ease, box-shadow .25s ease;
-    }
-    .feature-card:hover{
-      transform: translateY(-4px);
-      box-shadow: 0 18px 38px rgba(0,0,0,.10);
-    }
-    .feature-icon{
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      background: rgba(30,136,229,.10);
-      color: var(--primary);
-      font-size: 22px;
-      margin-bottom: 10px;
-    }
-
-    /* HERO */
-    .hero-pill{
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(30,136,229,.10);
-      color: var(--primary);
-      font-weight: 800;
-      font-size: 13px;
-    }
-    .hero-badges{
-      display:flex;
-      gap:10px;
-      flex-wrap: wrap;
-      margin-top: 12px;
-    }
-    .hero-badge{
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(255,255,255,.85);
-      border: 1px solid rgba(31,41,55,.08);
-      font-size: 13px;
-      color: var(--text);
-    }
-
-    /* ACTIVIDADES */
-    .actividad-img{
-      height: 350px;
-      width: 100%;
-      object-fit: cover;
-      border-radius: 14px;
-    }
-
-    /* QUIENES SOMOS */
-    .quienessomos { font-size: 32px; }
-    .quienes-texto { max-width: 760px; font-size: 16px; }
-    .imagenlogo { height: 200px; width: 220px; object-fit: contain; }
-
-    /* FORM */
-    .form-control, .form-select{
-      border-radius: 12px;
-      border-color: rgba(31,41,55,.12);
-    }
-    .btn-primary{
-      background: var(--primary);
-      border-color: var(--primary);
-      font-weight: 800;
-    }
-    .btn-primary:hover{ opacity:.95; }
-    .btn-outline-primary{
-      border-color: var(--primary);
-      color: var(--primary);
-      font-weight: 800;
-      border-radius: 12px;
-    }
-
-    /* WhatsApp flotante */
-    .wa-float{
-      position: fixed;
-      right: 18px;
-      bottom: 18px;
-      z-index: 9999;
-      text-decoration:none;
-    }
-    .wa-btn{
-      display:flex;
-      align-items:center;
-      gap:10px;
-      background: #25D366;
-      color:#fff;
-      padding: 12px 14px;
-      border-radius: 999px;
-      box-shadow: 0 14px 30px rgba(0,0,0,.18);
-      font-weight: 900;
-    }
-    .wa-btn:hover{ opacity:.95; transform: translateY(-1px); }
-
-    /* ===== Animaciones on-scroll ===== */
-    .reveal{
-      opacity: 0;
-      transform: translateY(18px);
-      transition: opacity .75s ease, transform .75s ease;
-      will-change: opacity, transform;
-    }
-    .reveal[data-anim="left"]{ transform: translateX(-24px); }
-    .reveal[data-anim="right"]{ transform: translateX(24px); }
-    .reveal[data-anim="down"]{ transform: translateY(-18px); }
-    .reveal[data-anim="zoom"]{ transform: scale(.96); }
-
-    .reveal.is-visible{
-      opacity: 1;
-      transform: translate(0,0) scale(1);
-    }
-
-    .delay-1{ transition-delay: .06s; }
-    .delay-2{ transition-delay: .12s; }
-    .delay-3{ transition-delay: .18s; }
-    .delay-4{ transition-delay: .24s; }
-    .delay-5{ transition-delay: .30s; }
-
-    @media (prefers-reduced-motion: reduce){
-      .reveal, .feature-card{ transition: none !important; }
-      .reveal{ opacity:1 !important; transform:none !important; }
-    }
-
-    /* FOOTER */
-    .saqua-footer{
-      margin-top:auto;
-      background: #3aa0f3;
-      color:#fff;
-    }
-
-    .footer-container{
-      max-width:1100px;
-      margin:0 auto;
-      padding:42px 22px;
-      display:flex;
-      justify-content:space-between;
-      gap:40px;
-      flex-wrap:wrap;
-    }
-
-    .footer-brand{ flex: 1 1 320px; }
-    .footer-brand h2{
-      margin:0 0 10px;
-      font-weight:900;
-      letter-spacing:2px;
-      font-size:40px;
-    }
-    .footer-brand p{
-      margin:0;
-      opacity:.95;
-      line-height:1.6;
-      max-width:420px;
-    }
-
-    .footer-info{ flex: 1 1 320px; }
-    .footer-social{ flex: 0 0 200px; }
-
-    .footer-info h4,
-    .footer-social h4{
-      margin: 0 0 14px;
-      font-weight:900;
-      font-size:26px;
-    }
-
-    .footer-row{
-      margin:10px 0;
-      font-size:14px;
-      display:flex;
-      gap:10px;
-      align-items:flex-start;
-      opacity:.98;
-    }
-
-    .dot{
-      color:#ff5a5a;
-      font-weight:900;
-      line-height:1;
-      margin-top:2px;
-    }
-
-    .social-link{
-      display:inline-block;
-      text-decoration:none;
-      color:#fff;
-      font-weight:800;
-      padding:10px 18px;
-      border-radius:999px;
-      background: rgba(255,255,255,.18);
-      transition: .25s;
-    }
-    .social-link:hover{
-      background: rgba(255,255,255,.28);
-      transform: translateY(-2px);
-    }
-
-    .footer-bottom{
-      text-align:center;
-      padding:16px 10px;
-      background: rgba(0,0,0,.12);
-      font-size:13px;
-      letter-spacing:.4px;
-    }
 
 
+<style>
+  :root{
+    /* Base */
+    --primary:#1E88E5;
+    --primary2:#4DABF7;
+    --bg:#E9F1F7;
+    --text:#1F2937;
+    --muted:#6B7280;
+    --card:#FFFFFF;
+    --shadow: 0 14px 35px rgba(0,0,0,.08);
 
+    /* Look SAQUA (banner) */
+    --saqua-blue-1:#0b4c86;
+    --saqua-blue-2:#1a7fd1;
+    --saqua-ice:#eaf4ff;
+    --saqua-muted:#475569;
+    --saqua-green:#39b54a;
+  }
 
+  html, body { height: 100%; }
+  html { scroll-behavior: smooth; }
+  section[id]{ scroll-margin-top: 110px; }
+  @media (max-width: 768px){ section[id]{ scroll-margin-top: 140px; } }
 
-    /* =========================
-   RESPONSIVE PRO (MÓVIL/TABLET)
-   Pega esto AL FINAL del <style>
-   ========================= */
+  body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+  }
 
-/* Ajustes generales para pantallas medianas y pequeñas */
-@media (max-width: 992px){
-  .section-pad{ padding: 56px 0; }
+  .page-content{ flex:1; overflow: visible !important; }
 
-  /* Menú: que no se vea tan ancho y no se “desparrame” */
-  .aqua-menu{
-    max-width: 94%;
-    gap: 14px;
-    padding: 10px 12px;
+  /* ===== HEADER + HERO (SAQUA) ===== */
+  .saqua-header{ position: sticky; top: 0; z-index: 9999; }
+
+  .saqua-topbar{
+    background: linear-gradient(180deg, #083b6b, #0a4b85);
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .saqua-topbar .container{ padding: 6px 12px; }
+  .saqua-topbar-left{ opacity: .95; }
+
+  .saqua-navwrap{
+    background: rgba(255,255,255,.78);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(15,23,42,.08);
+  }
+  .saqua-navwrap .container{ padding: 10px 12px; }
+
+  .saqua-brand-logo{
+    height: 44px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .saqua-nav .saqua-link{
+    color: #223;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 8px 6px;
+    border-bottom: 2px solid transparent;
+    opacity: .9;
+  }
+  .saqua-nav .saqua-link:hover{ opacity: 1; }
+  .saqua-nav .saqua-link.active{
+    border-bottom-color: var(--saqua-green);
+  }
+
+  .saqua-btn{
+    background: linear-gradient(180deg, #41c55b, #2ea545);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    padding: 10px 18px;
+    border-radius: 999px;
+    box-shadow: 0 10px 20px rgba(0,0,0,.18);
+  }
+  .saqua-btn:hover{ opacity: .95; }
+
+  .saqua-hero{
+    background:
+      radial-gradient(1200px 420px at 40% 40%, rgba(255,255,255,.75), rgba(255,255,255,0)),
+      linear-gradient(180deg, #bfe4ff 0%, #eaf4ff 35%, #d7f0ff 100%);
+    padding: 34px 0 28px;
+  }
+
+  .saqua-hero-inner{
+    background: rgba(255,255,255,.40);
+    border: 1px solid rgba(15,23,42,.08);
+    border-radius: 18px;
+    padding: 26px 18px 18px;
+    box-shadow: 0 16px 38px rgba(0,0,0,.10);
+  }
+
+  .saqua-badge-wrap{ display:flex; justify-content:center; }
+
+  .saqua-badge-ring{
+    width: 320px;
+    height: 320px;
+    border-radius: 999px;
+    background:
+      radial-gradient(circle at 30% 30%, rgba(255,255,255,.9), rgba(255,255,255,.2)),
+      linear-gradient(180deg, rgba(10,120,210,.35), rgba(10,120,210,.10));
+    border: 10px solid rgba(255,255,255,.75);
+    box-shadow: 0 18px 40px rgba(0,0,0,.18);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .saqua-badge-logo{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 12px rgba(0,0,0,.20));
+  }
+
+  .saqua-hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.06;
+    color: #0b2a4b;
+    margin: 0 0 12px;
+  }
+  .saqua-hero-sub{
+    color: var(--saqua-muted);
+    font-size: 18px;
+    max-width: 620px;
+    margin: 0 0 16px;
+  }
+
+  .saqua-hero-actions{
+    display:flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .saqua-pill-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding: 12px 16px;
+    border-radius: 999px;
+    font-weight: 900;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(180deg, #43c85e, #2ea545);
+    box-shadow: 0 12px 22px rgba(0,0,0,.14);
+  }
+  .saqua-pill-btn.light{
+    background: rgba(255,255,255,.75);
+    color: #0b2a4b;
+    border: 1px solid rgba(15,23,42,.12);
+  }
+
+  .saqua-what{ text-align:center; }
+  .saqua-what-title{
+    font-weight: 900;
+    font-size: 26px;
+    color:#0b2a4b;
+    margin: 8px 0 0;
+  }
+
+  .saqua-card{
+    background: rgba(255,255,255,.70);
+    border: 1px solid rgba(15,23,42,.10);
+    border-radius: 16px;
+    padding: 16px;
+    height: 100%;
+    box-shadow: 0 10px 22px rgba(0,0,0,.08);
+  }
+  .saqua-card-icon{
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    background: rgba(67,200,94,.14);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size: 24px;
+    margin: 0 auto 10px;
+  }
+  .saqua-card-title{
+    font-weight: 900;
+    font-size: 18px;
+    color:#0b2a4b;
+    margin: 0 0 6px;
+  }
+  .saqua-card-text{
+    margin: 0;
+    color: var(--saqua-muted);
+    font-size: 14px;
+  }
+
+  .saqua-bottom-slogan{
+    font-weight: 900;
+    color: #fff;
+    background: linear-gradient(180deg, rgba(8,59,107,.85), rgba(8,59,107,.65));
+    border-radius: 999px;
+    padding: 10px 14px;
+    display:inline-block;
+    margin-top: 12px;
+  }
+
+  @media (max-width: 992px){
+    .saqua-hero-title{ font-size: 36px; }
+    .saqua-badge-ring{ width: 280px; height: 280px; }
+  }
+  @media (max-width: 576px){
+    .saqua-hero-inner{ padding: 18px 12px; }
+    .saqua-hero-title{ font-size: 30px; }
+    .saqua-hero-sub{ font-size: 16px; }
+    .saqua-badge-ring{ width: 240px; height: 240px; }
+  }
+
+  /* ====== SECCIONES ====== */
+  .section-pad{ padding: 72px 0; }
+  .section-title{
+    font-weight: 900;
+    letter-spacing: .2px;
+    margin-bottom: 8px;
+  }
+  .section-sub{
+    color: var(--muted);
+    max-width: 820px;
+    margin: 0 auto;
+  }
+  @media (max-width: 992px){ .section-pad{ padding: 56px 0; } }
+  @media (max-width: 768px){ .section-pad{ padding: 48px 0; } }
+
+  /* ====== TARJETAS / COMPONENTES REUTILIZADOS ====== */
+  .card-pro{
+    background: var(--card);
+    border: 1px solid rgba(31,41,55,.08);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+  }
+  .card-pro .card-pro-body{ padding: 18px; }
+
+  .feature-card{
+    background: var(--card);
+    border: 1px solid rgba(31,41,55,.08);
+    border-radius: 16px;
+    padding: 16px;
+    height: 100%;
+    box-shadow: 0 10px 22px rgba(0,0,0,.06);
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  .feature-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 18px 38px rgba(0,0,0,.10);
+  }
+  .feature-icon{
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: rgba(30,136,229,.10);
+    color: var(--primary);
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  @media (max-width: 768px){
+    .feature-card{ padding: 14px; border-radius: 14px; }
+    .feature-icon{ width: 42px; height: 42px; }
+  }
+
+  /* ACTIVIDADES */
+  .actividad-img{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
     border-radius: 14px;
   }
-  .aqua-menu a{
-    font-size: 13px;
+  @media (max-width: 992px){ .actividad-img{ height: 300px; } }
+  @media (max-width: 768px){ .actividad-img{ height: 260px; } }
+  @media (max-width: 480px){ .actividad-img{ height: 220px; } }
+
+  /* QUIÉNES SOMOS */
+  .quienessomos { font-size: 32px; }
+  .quienes-texto { max-width: 760px; font-size: 16px; }
+  .imagenlogo { height: 200px; width: 220px; object-fit: contain; }
+  @media (max-width: 992px){ .imagenlogo{ height: 180px; width: 200px; } }
+  @media (max-width: 768px){
+    .quienes-texto{ padding: 0 14px; font-size: 15px; }
+    #quienes-somos .text-lg-end,
+    #quienes-somos .text-lg-start{
+      text-align: center !important;
+    }
   }
 
-  /* Hero */
-  .aqua-title{ height: 210px; }
-  .aqua-text{ font-size: 90px; letter-spacing: 4px; }
-
-  /* Actividades imágenes */
-  .actividad-img{ height: 300px; }
-
-  /* Quiénes */
-  .imagenlogo{ height: 180px; width: 200px; }
-}
-
-/* Tablet pequeña / phablet */
-@media (max-width: 768px){
-  .section-pad{ padding: 48px 0; }
-
-  /* Título */
-  .aqua-title{ height: 190px; }
-  .aqua-text{ font-size: 74px; letter-spacing: 3px; }
-
-  .eslogan{ font-size: 16px; padding: 0 14px; }
-
-  /* Botones en hero: full width en móvil */
-  #inicio .btn{
-    width: 100%;
+  /* FORM */
+  .form-control, .form-select{
+    border-radius: 12px;
+    border-color: rgba(31,41,55,.12);
   }
-  #inicio .d-flex.gap-2{
-    flex-direction: column;
-    align-items: stretch;
+  .btn-primary{
+    background: var(--primary);
+    border-color: var(--primary);
+    font-weight: 800;
   }
+  .btn-primary:hover{ opacity:.95; }
 
-  /* Badges: se acomodan mejor */
-  .hero-badges{
-    gap: 8px;
+  /* WhatsApp flotante */
+  .wa-float{
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    z-index: 9999;
+    text-decoration:none;
   }
-  .hero-badge{
-    flex: 1 1 auto;
-    text-align: center;
-    font-size: 12px;
+  .wa-btn{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background: #25D366;
+    color:#fff;
+    padding: 12px 14px;
+    border-radius: 999px;
+    box-shadow: 0 14px 30px rgba(0,0,0,.18);
+    font-weight: 900;
+  }
+  .wa-btn:hover{ opacity:.95; transform: translateY(-1px); }
+  @media (max-width: 480px){
+    .wa-float{ right: 12px; bottom: 12px; }
+    .wa-btn{ padding: 10px 12px; font-size: 14px; }
   }
 
-  /* Cards: menos padding */
-  .feature-card{ padding: 14px; border-radius: 14px; }
-  .feature-icon{ width: 42px; height: 42px; border-radius: 12px; }
-
-  /* Carrusel */
-  .actividad-img{ height: 260px; }
-
-  /* Quienes somos: mejor centrado en móvil */
-  #quienes-somos .text-lg-end,
-  #quienes-somos .text-lg-start{
-    text-align: center !important;
+  /* Animaciones on-scroll */
+  .reveal{
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity .75s ease, transform .75s ease;
+    will-change: opacity, transform;
   }
-  .quienes-texto{
-    padding: 0 14px;
-    font-size: 15px;
-  }
+  .reveal[data-anim="left"]{ transform: translateX(-24px); }
+  .reveal[data-anim="right"]{ transform: translateX(24px); }
+  .reveal[data-anim="down"]{ transform: translateY(-18px); }
+  .reveal[data-anim="zoom"]{ transform: scale(.96); }
 
-  /* Cobertura tarjetas */
-  #cobertura .feature-card{
-    text-align: center;
+  .reveal.is-visible{
+    opacity: 1;
+    transform: translate(0,0) scale(1);
   }
 
-  /* PQR */
-  #quejas form{
-    padding: 18px !important;
+  .delay-1{ transition-delay: .06s; }
+  .delay-2{ transition-delay: .12s; }
+  .delay-3{ transition-delay: .18s; }
+  .delay-4{ transition-delay: .24s; }
+  .delay-5{ transition-delay: .30s; }
+
+  @media (prefers-reduced-motion: reduce){
+    .reveal, .feature-card{ transition: none !important; }
+    .reveal{ opacity:1 !important; transform:none !important; }
   }
 
-  /* Footer: columnas una debajo de otra */
+  /* FOOTER */
+  .saqua-footer{
+    margin-top:auto;
+    background: #3aa0f3;
+    color:#fff;
+  }
+
   .footer-container{
-    padding: 34px 18px;
-    gap: 22px;
-  }
-  .footer-brand h2{ font-size: 34px; }
-  .footer-info h4, .footer-social h4{ font-size: 22px; }
-}
-
-/* Móvil */
-@media (max-width: 480px){
-  :root{
-    --shadow: 0 10px 26px rgba(0,0,0,.08);
+    max-width:1100px;
+    margin:0 auto;
+    padding:42px 22px;
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+    flex-wrap:wrap;
   }
 
-  /* Menú más compacto */
-  .aqua-header{ padding: 10px 0; }
+  .footer-brand{ flex: 1 1 320px; }
+  .footer-brand h2{
+    margin:0 0 10px;
+    font-weight:900;
+    letter-spacing:2px;
+    font-size:40px;
+  }
+  .footer-brand p{
+    margin:0;
+    opacity:.95;
+    line-height:1.6;
+    max-width:420px;
+  }
 
-  /* Título SAQUA */
-  .aqua-title{ height: 165px; }
-  .aqua-text{ font-size: 56px; letter-spacing: 2px; }
-  .hero-pill{ font-size: 12px; }
+  .footer-info{ flex: 1 1 320px; }
+  .footer-social{ flex: 0 0 200px; }
 
-  /* Textos */
-  h2.section-title{ font-size: 22px; }
-  .section-sub{ font-size: 14px; padding: 0 10px; }
+  .footer-info h4,
+  .footer-social h4{
+    margin: 0 0 14px;
+    font-weight:900;
+    font-size:26px;
+  }
 
-  /* Actividades */
-  .actividad-img{ height: 220px; }
+  .footer-row{
+    margin:10px 0;
+    font-size:14px;
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+    opacity:.98;
+  }
 
-  /* WhatsApp flotante más pequeño */
-  .wa-float{ right: 12px; bottom: 12px; }
-  .wa-btn{ padding: 10px 12px; font-size: 14px; }
+  .dot{
+    color:#ff5a5a;
+    font-weight:900;
+    line-height:1;
+    margin-top:2px;
+  }
 
-  /* Inputs */
-  .form-control, .form-select{ font-size: 14px; }
+  .social-link{
+    display:inline-block;
+    text-decoration:none;
+    color:#fff;
+    font-weight:800;
+    padding:10px 18px;
+    border-radius:999px;
+    background: rgba(255,255,255,.18);
+    transition: .25s;
+  }
+  .social-link:hover{
+    background: rgba(255,255,255,.28);
+    transform: translateY(-2px);
+  }
 
-  /* Footer */
-  .footer-bottom{ font-size: 12px; }
-}
+  .footer-bottom{
+    text-align:center;
+    padding:16px 10px;
+    background: rgba(0,0,0,.12);
+    font-size:13px;
+    letter-spacing:.4px;
+  }
 
-/* Mejoras de usabilidad: evita que el menú tape el título al saltar con #anclas */
-section[id]{
-  scroll-margin-top: 110px;
-}
+  @media (max-width: 768px){
+    .footer-container{
+      padding: 34px 18px;
+      gap: 22px;
+    }
+    .footer-brand h2{ font-size: 34px; }
+    .footer-info h4, .footer-social h4{ font-size: 22px; }
+  }
 
-@media (max-width: 768px){
-  section[id]{ scroll-margin-top: 140px; }
-}
 
-/* HEADER SIEMPRE VISIBLE */
-.aqua-header{
+
+
+/* FIX: el header no se debe esconder */
+.saqua-header{
   position: sticky;
   top: 0;
-  z-index: 9999;
-  padding: 14px 0;
-  background: rgba(233, 241, 247, 0.75); /* fondo suave para que no “desaparezca” */
+  z-index: 2147483647; /* por encima de todo */
+}
+
+/* Asegura que el navbar siempre tenga fondo visible */
+.saqua-navwrap{
+  position: sticky; /* opcional pero ayuda */
+  top: 0;
+  z-index: 2147483647;
+  background: rgba(255,255,255,.92) !important;
+}
+
+/* Evita que secciones “pisen” el header por stacking contexts */
+#quienes-somos,
+#quienes-somos *{
+  z-index: auto !important;
+}
+
+/* Si algún reveal crea stacking, esto ayuda */
+.reveal{
+  position: relative;
+  z-index: 1;
+}
+
+main, .page-content{
+  overflow: visible !important;
+  transform: none !important;
+  filter: none !important;
+}
+
+/* ===== OFFCANVAS MOBILE (estilos) ===== */
+.saqua-offcanvas{
+  background: rgba(255,255,255,.96);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
 
-/* El menú como tal */
-.aqua-menu{
-  max-width:1100px;
-  margin:0 auto;
-  display:flex;
-  justify-content:center;
-  gap:26px;
-  padding:12px 18px;
-  border-radius:16px;
-  background: linear-gradient(135deg, var(--primary), var(--primary2));
-  box-shadow: 0 10px 25px rgba(0,0,0,.18);
-  flex-wrap: wrap;
+.saqua-offcanvas-header{
+  border-bottom: 1px solid rgba(15,23,42,.10);
 }
 
-/* Evita que sticky falle por overflow en contenedores */
-html, body{
-  overflow-x: hidden;
+.saqua-offcanvas-body{
+  padding-top: 14px;
 }
 
-.page-content{
-  overflow: visible !important;
+.saqua-mobile-link{
+  display: block;
+  text-decoration: none;
+  color: #0b2a4b;
+  font-weight: 800;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(15,23,42,.08);
+  background: rgba(255,255,255,.75);
+  margin-bottom: 10px;
+  transition: transform .15s ease, opacity .15s ease, background .15s ease;
 }
 
+.saqua-mobile-link:hover{
+  opacity: .95;
+  background: rgba(255,255,255,.95);
+  transform: translateY(-1px);
+}
+
+.saqua-mobile-sep{
+  margin: 14px 0;
+  opacity: .25;
+}
+
+.saqua-mobile-cta{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 900;
+  padding: 12px 16px;
+  border-radius: 999px;
+  color: #fff;
+  background: linear-gradient(180deg, #43c85e, #2ea545);
+  box-shadow: 0 12px 22px rgba(0,0,0,.14);
+}
+.saqua-mobile-cta:hover{ opacity: .95; }
 
 
-  </style>
+</style>
+
 </body>
 </html>
