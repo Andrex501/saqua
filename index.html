@@ -47,7 +47,10 @@
       </nav>
 
       <!-- Botón derecha -->
-      <a class="saqua-btn" href="https://wa.me/573001234567" target="_blank" rel="noopener">Contáctanos</a>
+     <a class="saqua-btn d-none d-lg-inline-flex" href="https://wa.me/573001234567" target="_blank" rel="noopener">
+  Contáctanos
+</a>
+
 
       <!-- menú móvil (opcional) -->
       <button class="btn btn-outline-primary d-lg-none ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav">
@@ -1068,6 +1071,38 @@ main, .page-content{
   box-shadow: 0 12px 22px rgba(0,0,0,.14);
 }
 .saqua-mobile-cta:hover{ opacity: .95; }
+
+/* ===== FIX Z-INDEX: Offcanvas por encima del header ===== */
+
+/* Header sticky normal (alto, pero NO infinito) */
+.saqua-header{
+  position: sticky;
+  top: 0;
+  z-index: 1030; /* similar a navbar de Bootstrap */
+}
+
+/* Offcanvas debe estar por encima del header */
+.offcanvas.saqua-offcanvas{
+  z-index: 1100 !important;
+}
+
+/* Backdrop por encima del header también */
+.offcanvas-backdrop{
+  z-index: 1090 !important;
+}
+
+/* Opcional: mejora la X (se ve más claro) */
+.saqua-offcanvas .btn-close{
+  filter: none;
+  opacity: 1;
+}
+
+/* En móvil, el botón hamburguesa y el logo no deben taparse */
+@media (max-width: 992px){
+  .saqua-navwrap .container{
+    gap: 10px;
+  }
+}
 
 
 </style>
