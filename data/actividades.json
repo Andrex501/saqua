@@ -1,13 +1,6 @@
 {
   "items": [
     {
-      "id": "232",
-      "titulo": "Prueba 1",
-      "texto": "water",
-      "imagen": "/assets/uploads/vaca.jpeg",
-      "fecha": "2025-12-31"
-    },
-    {
       "id": "545",
       "titulo": "Prueba 2",
       "texto": "water",
