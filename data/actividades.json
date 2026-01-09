@@ -1,25 +1,3 @@
 {
-  "items": [
-    {
-      "id": "232",
-      "titulo": "Prueba 1",
-      "texto": "water",
-      "imagen": "/assets/uploads/vaca.jpeg",
-      "fecha": "2025-12-31"
-    },
-    {
-      "id": "545",
-      "titulo": "Prueba 2",
-      "texto": "water",
-      "imagen": "/assets/uploads/rio1.jpeg",
-      "fecha": "2025-12-27"
-    },
-    {
-      "id": "4545",
-      "titulo": "Prueba 3",
-      "texto": "water",
-      "imagen": "/assets/uploads/rio2.jpeg",
-      "fecha": "2025-12-22"
-    }
-  ]
+  "items": []
 }
